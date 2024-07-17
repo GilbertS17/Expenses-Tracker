@@ -7,7 +7,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import ManageExpense from "./screens/ManageExpense";
 import AllExpenses from "./screens/AllExpenses";
 import RecentExpenses from "./screens/RecentExpenses";
-import { GlobalStyles } from "./constants/styles";
+import { GlobalStyles } from "./cosntants/styles";
 
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
