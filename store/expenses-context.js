@@ -29,7 +29,7 @@ const DUMMY_EXPENSES = [
     id: "e5",
     description: "Another book",
     amount: 18.99,
-    date: new Date("2024-07-21"),
+    date: new Date("2024-07-30"),
   },
 ];
 
@@ -69,11 +69,11 @@ export default function ExpensesContextProvider({ children }) {
   }
 
   function deleteExpense(id) {
-    dispatch({ type: "DELETE", payload: id });
+    dispatch({ type: "DELETE", payload: { id } });
   }
 
   function updateExpense(id, expenseData) {
-    dispatch({ type: "UPDATE", payload: { id: id, date: expenseData } });
+    dispatch({ type: "UPDATE", payload: { id: id, data: expenseData } });
   }
 
   const value = {
