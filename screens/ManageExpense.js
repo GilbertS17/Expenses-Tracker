@@ -4,7 +4,7 @@ import { GlobalStyles } from "../cosntants/styles";
 import IconButton from "../components/UI/IconButton";
 import { ExpensesContext } from "../store/expenses-context";
 import ExpenseForm from "../components/ManageExpense/ExpenseForm";
-import storeExpense from "../util/http";
+import { storeExpense } from "../util/http";
 
 export default function ManageExpense({ route, navigation }) {
   const expenseCtx = useContext(ExpensesContext);
